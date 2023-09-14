@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    color: #960303;
+    font-size: 400%;
+}
+
+body {
+    background-color: #e8e8a2
+}
+
+h2, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgreen;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+img {
+    width: 50%;
+}
+
+div#wrapper {
+    max-width: 1000px;
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+div.align-center {
+    text-align: center;
+}
+
+
+
