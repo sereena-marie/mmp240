@@ -1,0 +1,21 @@
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:1em;
+  }
+  
+  .item{
+    background-color:lightblue;
+    padding:2em;
+  }
+  
+  .five{
+    grid-column:2/ span 2;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:1em;
+  }
+  
+  .five .item{
+    background-color:orange;
+  }
