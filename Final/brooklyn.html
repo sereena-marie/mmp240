@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{color: rgb(230, 133, 6);
+        text-shadow: 2px 2px black;
+        }
+        h3{margin-left: 2em;}
+        img{float: left;}
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            
+            
+                <h1><img src="image/cunylogo2.png" alt="cunylogo2" width="200px"></h1>  
+                
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="">About CUNY</a></li>
+                        <li><a href="">Fincial Aid</a></li>
+                        <li><a hred="">Apply</a></li>
+                        <li><form action="#" method="get">
+                            <input type="search" id="search" name="search" placeholder="search">
+                            <button>Submit</button>
+                              </form></li>
+                              </ul>
+
+                    </nav>
+
+                    <script>
+                        let button = true;
+
+function closeOpen() {
+const navElement = document.getElementById('topnav');
+
+
+
+if (window.innerWidth <= 700) {
+   
+   if (button) {
+       navElement.style.display = 'block';
+   
+   } else {
+       navElement.style.display = 'none';
+       
+   }
+} else {
+  
+   navElement.style.display = 'flex';
+}
+
+
+button = !button;
+}
+
+document.getElementById('menu').addEventListener('click', closeOpen);
+window.addEventListener('resize', closeOpen)
+                   </script>
+                
+            
+        </header>
+
+
+    <div class="nav">
+            
+    
+        <nav>
+            <ul class="main-menu">
+
+              
+    
+                <li class="program-select"><a href="#">Discipline <span class="material-symbols-outlined">
+                expand_more
+                </span></a>
+            <ul class="drop-menu">
+                <li><a href="digitaldesign.html">Digital Design</a></li>
+                <li><a href="">Animation</a></li>
+                <li><a hred="">Digital Design Animation</a></li>
+                <li><a hred="">Industrial Design</a></li>
+            </ul>
+            </li>
+    
+            <li class="program-select"><a href="#">Degree <span class="material-symbols-outlined">
+                expand_more
+                </span></a>
+            <ul class="drop-menu">
+                <li><a href="associate.html">Associates</a></li>
+                <li><a href="bachelor.html">Bachelor</a></li>
+
+            </ul>
+            </li>
+    
+            <li class="program-select"><a href="#">Borough <span class="material-symbols-outlined">
+                expand_more
+                </span></a>
+            <ul class="drop-menu">
+                <li><a href="manhattan.html">Manhattan</a></li>
+                <li><a href="brooklyn.html">Brooklyn</a></li>
+                <li><a href="queens.html">Queens</a></li>
+                <li><a href="bronx.html">The Bronx</a></li>
+            </ul> <!-- closing .drop-menu-->
+        </li>
+        </ul> <!-- closing main menu -->
+        </nav>
+        </div>
+ 
+    <h1>Brooklyn Locations</h1>
+
+   
+
+    <div class="layoutOne">
+
+        <a href="https://www.kbcc.cuny.edu/academicdepartments/art/Animation.html" target="_blank" class="link">
+          <div class="card">
+            <img src="image/kingsborough.jpeg"width="330px" height="170px" alt="5">
+            <div class="card-content">
+  <h3>Kingsborough Community College</h3>
+  <h2>Animation</h2>
+  <h4>Associates Degree A.S.</h4>
+  <p>The Art Department at Kingsborough Community College is dedicated to providing a comprehensive program of study in the visual arts, designed to prepare students of diverse life experience for either continued baccalaureate study or immediate entry into a range of visual art professions.</p>
+  
+  </div>
+  
+  
+  </div>
+  </a>
+
+  <a href="https://www.kbcc.cuny.edu/academicdepartments/art/Graphic-Design-and-Illustration.html" target="_blank" class="link">
+    <div class="card">
+    <img src="image/kingsborough.jpeg"width="330px" height="170px" alt="kingsborough">
+    <div class="card-content">
+      <h3>Kingsborough Community College</h3>
+      <h2>Graphic Design & Illustration</h2>
+      <h4>Associates Degree A.S.</h4>
+      <p>The Art Department at Kingsborough Community College is dedicated to providing a comprehensive program of study in the visual arts, designed to prepare students of diverse life experience for either continued baccalaureate study or immediate entry into a range of visual art professions.</p>
+    </div>
+    
+   </div>
+    </a>
+
+
+
+
+  <a href="https://www.kbcc.cuny.edu/academicdepartments/art/UX-Design.html" target="_blank" class="link">
+    <div class="card">
+    <img src="image/kingsborough.jpeg"width="330px" height="170px" alt="kingsborough">
+    <div class="card-content">
+    <h3>Kingsborough Community College</h3>
+    <h2>UX Design</h2>
+    <p>Associates Degree A.S.</p>
+    <p>The Art Department at Kingsborough Community College is dedicated to providing a comprehensive program of study in the visual arts, designed to prepare students of diverse life experience for either continued baccalaureate study or immediate entry into a range of visual art professions.</p>
+    </div>
+    
+   </div>
+    </a>
+
+
+
+  
+  <a href="https://www.citytech.cuny.edu/mechanical/industrial-technology-aas.aspx" target="_blank" class="link">
+  <div class="card">
+  <img src="image/brooklyn.jpeg"width="330px" height="170px" alt="brooklyn">
+  <div class="card-content">
+  <h3>New York City College Of Technology</h3>
+  <h2>Industrial Design Technology</h2>
+  <p>Associate Degree A.S.S.</p>
+  <p>The Industrial Design Technology (IND) program is designed to provide students with a wide variety of skills enabling them to utilize a number of 2D, 3D and animation/simulation software packages in several diverse fields.</p>
+  </div>
+  
+  </div>
+  </a>
+
+  <a href="https://www.citytech.cuny.edu/communication-design/communication-design-aas.aspx" target="_blank" class="link">
+    <div class="card">
+    <img src="image/brooklyn.jpeg"width="330px" height="170px" alt="brooklyn">
+    <div class="card-content">
+    <h3>New York City College Of Technology</h3>
+    <h2>Communication Design</h2>
+    <p>Associates Degree A.A.S.</p>
+    <p>The AAS degree program in Communication Design provides students with a solid foundation in the theory and practices of the Communication Design profession and a grounding in general education. Students explore visual expression through a range of courses in drawing, design and web design.  </p>
+    </div>
+    
+   </div>
+    </a>
+
+
+    <a href="https://www.citytech.cuny.edu/communication-design/communication-design-bfa.aspx" target="_blank" class="link">
+        <div class="card">
+        <img src="image/brooklyn.jpeg"width="330px" height="170px" alt="brooklyn">
+        <div class="card-content">
+        <h3>New York City College Of Technology</h3>
+        <h2>Communication Design</h2>
+        <p>Bachelor Degree B.F.A.</p>
+        <p>The BFA degree develops students' abilities to frame, research and solve increasingly complex visual communication problems. Students develop a professional portfolio that  prepares them for employment as art directors, graphic designers, illustrators and web designers.  </p>
+        </div>
+        
+       </div>
+        </a>
+
+</div>
+</main>
+<footer>Copyright 2020 The City University of New York</footer>
+
+</div>
+
+</body>
+</html>

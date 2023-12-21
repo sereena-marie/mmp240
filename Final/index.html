@@ -6,68 +6,124 @@
     <title>Final</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+
+    
+
 </head>
 <body>
 
-<div class="nav">
-    <img src="CUNYLogo.png" alt="CUNYLogo" width="200px">
-    
 
-    <h1>Find a Design Program</h1>
-
-    <nav>
-        <ul class="main-menu">
-
-        <li><a href="#">Discipline <span class="material-symbols-outlined">
-            expand_more
-            </span></a>
-        <ul class="drop-menu">
-            <li><a href="">Digital Design</a></li>
-            <li><a href="">Animation</a></li>
-            <li><a hred="">Digital Design Animation</a></li>
-            <li><a hred="">Industrial Design</a></li>
-        </ul>
-        </li>
-
-        <li><a href="#">Degree <span class="material-symbols-outlined">
-            expand_more
-            </span></a>
-        <ul class="drop-menu">
-            <li><a href="">A.S.</a></li>
-            <li><a href="">A.A.S.</a></li>
-            <li><a hred="">B.A.</a></li>
-            <li><a hred="">B.S.</a></li>
-            <li><a hred="">B.F.A.</a></li>
-        </ul>
-        </li>
-
-        <li><a href="#">Borough <span class="material-symbols-outlined">
-            expand_more
-            </span></a></li>
-        <ul class="drop-menu">
-            <li><a href="">Manhattan</a></li>
-            <li><a href="">Brooklyn</a></li>
-            <li><a href="">Queens</a></li>
-            <li><a href="">The Bronx</a></li>
-        
-        </div>
-        </ul> <!-- closing .drop-menu-->
-    </li>
-        </ul> <!-- closing main menu -->
-    </nav>
 
 
     <div id="wrapper">
         <header>
             
-            <div class="banner"><img src="fall1.png" alt="fall1"></div>
-            <div class="fall1"></div> 
+            
+                <h1><img src="image/cunylogo2.png" alt="cunylogo2" width="150px"></h1>  
+                
+                
+                    <button><img src="menu.png" id="menu"></button>
+                    <nav class="topnav" id="topnav">
+                        <ul>
+                            <li><a href="">About CUNY</a></li>
+                            <li><a href="">Fincial Aid</a></li>
+                            <li><a hred="">Apply</a></li>
+                            <li><form action="#" method="get">
+                                <input type="search" id="search" name="search" placeholder="search">
+                                <button>Submit</button>
+                                  </form></li>
+                        </ul>
+    
+                    </nav>
+
+                        <script>
+                             let button = true;
+
+function closeOpen() {
+    const navElement = document.getElementById('topnav');
+   
+
+   
+    if (window.innerWidth <= 700) {
+        
+        if (button) {
+            navElement.style.display = 'block';
+        
+        } else {
+            navElement.style.display = 'none';
+            
+        }
+    } else {
+       
+        navElement.style.display = 'flex';
+    }
+
+    
+    button = !button;
+}
+
+document.getElementById('menu').addEventListener('click', closeOpen);
+window.addEventListener('resize', closeOpen)
+                        </script>
+                
+                       
+                          
+                
             
         </header>
 
 
+
+        <div class="banner"><img src="group1.png" alt="group1"></div>
+        
+
+        <div class="nav">
+            
+        
+            <h2>Find a Design Program</h2>
+        
+            <nav>
+                <ul class="main-menu">
+
+                  
+        
+                    <li class="program-select"><a href="#">Discipline <span class="material-symbols-outlined">
+                    expand_more
+                    </span></a>
+                <ul class="drop-menu">
+                    <li><a href="digitaldesign.html">Digital Design</a></li>
+                    <li><a href="">Animation</a></li>
+                    <li><a hred="">Digital Design Animation</a></li>
+                    <li><a hred="">Industrial Design</a></li>
+                </ul>
+                </li>
+        
+                <li class="program-select"><a href="#">Degree <span class="material-symbols-outlined">
+                    expand_more
+                    </span></a>
+                <ul class="drop-menu">
+                    <li><a href="associate.html">Associates</a></li>
+                    <li><a href="bachelor.html">Bachelor</a></li>
+
+                </ul>
+                </li>
+        
+                <li class="program-select"><a href="#">Borough <span class="material-symbols-outlined">
+                    expand_more
+                    </span></a>
+                <ul class="drop-menu">
+                    <li><a href="manhattan.html">Manhattan</a></li>
+                    <li><a href="brooklyn.html">Brooklyn</a></li>
+                    <li><a href="queens.html">Queens</a></li>
+                    <li><a href="bronx.html">The Bronx</a></li>
+                </ul> <!-- closing .drop-menu-->
+            </li>
+            </ul> <!-- closing main menu -->
+            </nav>
+            </div>
  
 <h2>Design News</h2>
+<img src="cuny11.png" alt="cuny11">
 <h4>CUNY TV Wins 21st New York Emmy Award For Animated Opening Sequence of ‘Shades of U.S.’ </h4>
 <p>April 27, 2020</p>
 <p>The City University of New York won two awards in the 63rd New York Emmy Awards, as CUNY TV and the New York City College of Technology each earned honors in Saturday’s ceremony. The award for CUNY TV brings to 21 the total number of Emmys the station has been awarded by the National Academy of Television Arts & Sciences New York Chapter.</p>
@@ -75,6 +131,6 @@
 <h4>CUNY Expands Digital Skills Curriculum and Creates Student Pipeline for Tech Jobs</h4>
 <p>October 28, 2019</p>
 <p>The City University of New York has significantly expanded its digital skills curriculum as part of a broad-based effort to produce a steady pipeline of diverse, adaptable, critical thinkers who can thrive in a workplace environment that is increasingly reliant on advanced digital technologies across most sectors of the economy. Another aim of this initiative is to encourage traditionally underrepresented groups to take up tech-focused areas of study.</p>
-
+</div>
 </body>
 </html>

@@ -8,7 +8,15 @@
     float:right;
 }
 
-nav a{
+.topnav li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.main-menu a{
     display:block;
     padding:10px;
     background-color: rgb(230, 133, 6);
@@ -17,7 +25,7 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+.main-menu a:hover{
     background-color: rgb(245, 113, 6);
 }
 
@@ -46,10 +54,11 @@ p{
 
 h1{
     
-    margin-left: 10em;
+    
     font-size: 50px;
 }
-h4{
+h3{
+    font-size: 15px;
     margin: 10px;
 }
 
@@ -59,16 +68,123 @@ h2{
 
 #wrapper{
     max-width: 1200px;
-    margin-left:auto;
+    margin-left: 20px;
     margin-right:auto;
 
 }
 
-@media (min-width: 700px){
-    .nav {
-        display: inline-flex;
-    }
+.banner img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    float: right;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+
+.program-card img{
+    width: 100%;
+}
+
+.program-card{
+    box-shadow: 3px 3px 10px;
+    border: 1px solid black;
+    width: 25em;
+    height: 23em;
 
 }
+
+.program-card p, .program-card h3, .program-card h4{
+    margin: 1em;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.card{ 
+    width: 23em;
+    height: 23em;
+    border: 1px solid black;
+    border-radius: 20px;
+    border-width: 2px;
+    background-color: white;
+    padding: 26px;
+
+}
+
+
+
+@media (min-width: 700px){
+    .main-menu {
+        display: flex;
+        
+    }
+    h1{
+        padding-left: 50px;
+    }
+    .program-select{
+        position: relative;
+        width:33%;
+        list-style-type: none;
+        margin-right:1px;
+    }
+
+    .nav{
+        margin-left: 30px;
+        width: 1350px;
+        padding-bottom: 70px;
+    }
+
+    .drop-menu{
+        position: absolute
+        width:100%;
+        list-style-type: none;
+    }
+
+    .topnav li{
+        display: inline;
+        margin: 1em;
+    }
+
+    .topnav form{
+        display: inline;
+        margin: 1em;
+    }
+
+    .program{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:1em;
+    }
+    .program a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .layoutOne{
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 90px;
+        grid-row-gap: 200px;
+        padding: 30px;
+    }
+
+    .card:hover {
+        box-shadow: 4px 4px rgb(230, 133, 6);
+    }
+   
+}
+
+
+
 
 

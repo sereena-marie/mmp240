@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{color: rgb(171, 13, 13);
+            margin-left: 8em;
+        }
+
+        p{
+            margin-left: 25em;
+            margin-top: 1em;
+        }
+
+        img{
+            margin-right: 6em;
+            margin-bottom: 1em;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            
+            
+                <h1><img src="image/cunylogo2.png" alt="cunylogo2" width="200px"></h1>  
+                
+                <nav class="topnav">
+                    <ul>
+                        <li><a href="">About CUNY</a></li>
+                        <li><a href="">Fincial Aid</a></li>
+                        <li><a hred="">Apply</a></li>
+                        <li><form action="#" method="get">
+                            <input type="search" id="search" name="search" placeholder="search">
+                            <button>Submit</button>
+                              </form></li>
+                              </ul>
+
+                    </nav>
+
+                    <script>
+                        let button = true;
+
+function closeOpen() {
+const navElement = document.getElementById('topnav');
+
+
+
+if (window.innerWidth <= 700) {
+   
+   if (button) {
+       navElement.style.display = 'block';
+   
+   } else {
+       navElement.style.display = 'none';
+       
+   }
+} else {
+  
+   navElement.style.display = 'flex';
+}
+
+
+button = !button;
+}
+
+document.getElementById('menu').addEventListener('click', closeOpen);
+window.addEventListener('resize', closeOpen)
+                   </script>
+                
+            
+        </header>
+
+
+    <div class="nav">
+            
+    
+        <nav>
+            <ul class="main-menu">
+
+              
+    
+                <li class="program-select"><a href="#">Discipline <span class="material-symbols-outlined">
+                expand_more
+                </span></a>
+            <ul class="drop-menu">
+                <li><a href="">Digital Design</a></li>
+                <li><a href="">Animation</a></li>
+                <li><a hred="">Digital Design Animation</a></li>
+                <li><a hred="">Industrial Design</a></li>
+            </ul>
+            </li>
+    
+            <li class="program-select"><a href="#">Degree <span class="material-symbols-outlined">
+                expand_more
+                </span></a>
+            <ul class="drop-menu">
+                <li><a href="associate.html">Associates</a></li>
+                <li><a href="bachelor.html">Bachelor</a></li>
+
+            </ul>
+            </li>
+    
+            <li class="program-select"><a href="#">Borough <span class="material-symbols-outlined">
+                expand_more
+                </span></a>
+            <ul class="drop-menu">
+                <li><a href="manhattan.html">Manhattan</a></li>
+                <li><a href="brooklyn.html">Brooklyn</a></li>
+                <li><a href="queens.html">Queens</a></li>
+                <li><a href="bronx.html">The Bronx</a></li>
+            </ul> <!-- closing .drop-menu-->
+        </li>
+        </ul> <!-- closing main menu -->
+        </nav>
+        </div>
+ 
+    <h1>Bachelor Degree</h1>
+
+
+    
+    <img src="image/degreebb.png" alt="degreebb" width="940">
+
+    <p>New York City College Of Technology - B.F.A.</p>
+    <p>Queens College - B.F.A.</p>
+    <p>The City College of New York - B.F.A.</p>
+    <p>York College - B.S.</p>
+    <p>Lehman College - B.S.</p>
+    <p>Baruch College - B.A.</p>
+
+
+
+
+
+    
+
+
+
+
+</body>
+</html>

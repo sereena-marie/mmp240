@@ -1,40 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Quiz 2</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 4</title>
     <style>
-    /* Type CSS code here */
 
-    </style>
+        #wrapper{
+            max-width: 1200px;
+            margin-left:auto;
+            margin-right:auto;
+            padding:16px;
+        }
+
+        .layout{
+            display:grid;
+            grid-template-rows: 300px 300px;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-column-gap: 16px;
+            grid-row-gap:16px;
+        }
+
+        .one{
+            background-color: aqua;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .two, .three, .four{
+            background-color:coral;
+        }
+
+      </style>
 
   </head>
   <body>
-    <header>
-      <h1 id="site-title" class="main-title">All About Selectors</h1>
-    </header>
-
-    <div id="wrapper">
-      <div class="layout">
-        <div class="one">
-          <img src="image/black0.png" alt="">
+      <div id="wrapper">
+          <div class="layout">
+              <div class="one">
+                  One
+              </div>
+              <div class="two">
+                  Two
+              </div>
+              <div class="three">
+                  Three
+              </div>
+              <div class="four">
+                  Four
+              </div>
           </div>
-        <div class="two">
-          <img src="image/tdog.jpg" alt="">
-        </div> 
-        <div class="three">
-          <img src="image/gray.jpg" alt="">
-        </div>
-        <div class="four">
-          <img src="image/bdog.jpg" alt="">
-        </div> 
-        <div class="five">
-          <p>Lorem On a Mac, you can use the following shortcut to generate Lorem Ipsum text in many text editors or applications: For a paragraph of Lorem Ipsum text: Type lorem and then press Tab.This shortcut is often supported in text editors and integrated development environments (IDEs) to quickly insert sample text for testing or design purposes. Keep in mind that the specific shortcuts can vary depending on the application you are using. If the application doesn't support this shortcut, you might need to use other methods to generate Lorem Ipsum text, such as online generators or dedicated plugins/extensions for your specific software.</p>
-        </div>
-        </div>
-      </div>
-
+    </div>
   </body>
 </html>
